@@ -85,7 +85,7 @@ async def set_afk(afk_e):
         \nReason: `{string}`"
         )
     else:
-        await afk_e.edit("Going AFK!")
+        await afk_e.edit("Sedang AFK!")
     if BOTLOG:
         await afk_e.client.send_message(BOTLOG_CHATID, "#AFK\nYou went AFK!")
     ISAFK = True
@@ -108,7 +108,7 @@ async def type_afk_is_not_true(notafk):
     afk_end = back_alive.replace(microsecond=0)
     if ISAFK:
         ISAFK = False
-        msg = await notafk.respond("I'm no longer AFK.")
+        msg = await notafk.respond(Udah Gk Afk Cok.")
         time.sleep(3)
         await msg.delete()
         if BOTLOG:
